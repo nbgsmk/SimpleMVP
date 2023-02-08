@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5" vgap="5" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplemvp.editor.EditorController">
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+	</columnConstraints>
+
+	<Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+	<Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+	<Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+	<TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+	<TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	<TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   <Button fx:id="b_dodaj" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bdodaj" text="Button" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+
+	<padding>
+		<Insets bottom="10" left="10" right="10" top="10" />
+	</padding>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
