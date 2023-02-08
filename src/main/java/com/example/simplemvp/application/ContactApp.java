@@ -34,7 +34,7 @@ public class ContactApp extends Application {
         editorController.initModel(model);
         menuController.initModel(model);
 
-        Scene scene = new Scene(root, 800, 600);
+        Scene scene = new Scene(root, 500, 300);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
